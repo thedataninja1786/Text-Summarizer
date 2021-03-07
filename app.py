@@ -2,8 +2,6 @@ import string
 import nltk 
 nltk.download('stopwords')
 from nltk.corpus import stopwords
-from flask_ngrok import run_with_ngrok
-from flask_ngrok import run_with_ngrok
 import datetime
 from flask import Flask, render_template , request 
 
