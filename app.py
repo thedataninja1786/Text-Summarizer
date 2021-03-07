@@ -1,3 +1,14 @@
+import string 
+import nltk 
+nltk.download('stopwords')
+from nltk.corpus import stopwords
+!pip install flask 
+!pip install flask-ngrok
+from flask_ngrok import run_with_ngrok
+from flask_ngrok import run_with_ngrok
+import datetime
+from flask import Flask, render_template , request 
+
 stop_words_en = stopwords.words('english')
 stop_words_gr = stopwords.words('greek')
 stop_words = stop_words_en + stop_words_gr 
