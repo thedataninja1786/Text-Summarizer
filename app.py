@@ -2,8 +2,6 @@ import string
 import nltk 
 nltk.download('stopwords')
 from nltk.corpus import stopwords
-!pip install flask 
-!pip install flask-ngrok
 from flask_ngrok import run_with_ngrok
 from flask_ngrok import run_with_ngrok
 import datetime
