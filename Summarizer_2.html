@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> Text Summarizer </h1>
+<div class="login">
+<h1>Insert the text you want to summarize in the box below</h1>
+
+  <form action="{{url_for('summary')}}"method="post">
+   <textarea rows= "15" cols="120" type="text" name="input" placeholder="type here" required="required">
+   </textarea>
+   <br><br>
+    <input type="submit" value="Summarize">
+  </form> 
+  <br>
+  <br>
+  {{data}}
+  </div>
