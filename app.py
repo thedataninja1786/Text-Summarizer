@@ -34,7 +34,7 @@ def summary():
 
   max_frequncy = max(frequency_dict.values())
 
-  #Standardize to get the score of each word
+  # Standardize to get the score of each word
   for word in frequency_dict.keys():
     frequency_dict[word] = round(frequency_dict[word] / max_frequncy,3)
 
@@ -47,10 +47,13 @@ def summary():
       if word in frequency_dict.keys() and word not in "''":
         score += frequency_dict[word]
     sentence_score.append([sentence,score])
-
-  sentence_num = 4 #sentences included in the summary 
-  sorted_arr = sorted(sentence_score,key=lambda x: x[1],reverse=True)[:sentence_num] #returns the top n sentences 
-  output = [elem for elem in sentence_score if elem in sorted_arr] #returns the element in the original order
+  
+  # Sentences included in the summary 
+  sentence_num = 4 
+  # Returns the top n sentences
+  sorted_arr = sorted(sentence_score,key=lambda x: x[1],reverse=True)[:sentence_num]  
+  # Returns the element in the original order
+  output = [elem for elem in sentence_score if elem in sorted_arr] 
 
   def summarize(summary):
     ds = []
